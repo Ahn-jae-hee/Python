@@ -1,0 +1,37 @@
+#class의 첫문자는 대문자.
+
+#파일명도 영어로
+
+what=['스마트폰','아이패드','에어팟','무선 마우스','최신 노트북']
+
+class Device:
+
+    
+
+    def __init__(self,my_best_device,owner_name,price):
+        self.my_best_device=my_best_device
+        self.owner_name=owner_name
+        self.price=price
+
+
+    def is_it_newest_technology(self):
+        if self.my_best_device in what:
+            print(self_owner_name, "is a modern and handsome guy! really nice..")
+
+        else :
+            print("oh..no..",self_owenr_name,"is an out-of-date guy.")
+
+
+
+class Owner(Device):
+    
+    def get_info(self):
+        print(self.owner_name+"'s'device is", self.my_best_device, "it is very good.")
+    
+    def how_much(self):
+        print("if you want to buy",self.my_best_device,"you may pay",str(self.price))
+        
+    def discount(self,rate_percent):
+        self.rate_percent=rate_percent
+        print("if you want to buy",self.owner_name+"'s'",self.my_best_device,"from",self.owner_name,
+              "you may pay",int(self.price*(100-self.rate_percent)/100))
