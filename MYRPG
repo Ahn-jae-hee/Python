@@ -1,0 +1,171 @@
+#RPG게임
+
+
+
+
+class Hero : 
+      
+      def __init__(self,user_name,server):
+          self.user_name=user_name     
+          self.server=server
+          
+      def Healing_portion(self,try):   #포션을 따로 class로 만드는게 나을까?
+         if try>my_portion_number : 
+             print("you need more Healing portion.")
+         else: 
+          self.Hp= (50*try)+Hp   #만약 최대치 이후로는 충전이 안되게 하려면..? 0~50 사이의 값만 부족하면?
+      def mana_portion(self,try):
+          if try>my_portion_number : 
+             print("you need more Healing portion.")
+         else: 
+          self.Mp= (50*try)+Mp   #만약 최대치 이후로는 충전이 안되게 하려면..? 0~50 사이의 값만 부족하면?
+      def elixer(self,try):
+          if try>my_elixer_number :
+             print("you need more elixer portion.")
+          else: 
+          self.Hp= (50*try)+Hp 
+          self.Mp= (50*try)+Mp  
+#엘릭서를 추가할까?
+#뭔가를 구매할 때는?
+#방어력
+#공격력
+#마법저항
+#골드?
+#명중
+#회피
+#크리티컬 확률
+#1차 스탯,2차 스탯. 
+#무기는?
+      
+class stat(Hero) : #레벨 1업할 때마다 5개의 새 스탯이 생길 수있게. 매력으로할까?
+      def __init__(self,new_strength,new_dexterity,new_magic,new_vitality):
+        
+
+class warrior(Hero) :
+    
+    def __init__(self,lev):
+        self.Hp=200+
+        self.Mp=30+   #이거 stat에다 묶어서 할 수 있을거 같은데...음..
+        self.attack_power= 100+(20*lev)
+        self.attack_speed= 3+(0.5*lev)
+        self.strength=20
+        self.dexterity=10
+        self.magic=5
+        self.vitality=10
+        self.
+        
+
+
+class thief(Hero) :
+
+     def __init__(self,lev):
+        self.Hp=150+
+        self.Mp=40+
+        self.attack_power= 70+(10*lev)
+        self.attack_speed= 5+(0.5*lev)
+        self.strength=13
+        self.dexterity=20
+        self.magic=5
+        self.vitality=10
+    
+class magician(Hero):
+    def __init__(self,lev):
+        self.Hp=120+
+        self.Mp=200+
+        self.attack_power= 15+(3*lev)
+        self.attack_speed= 3+(0.5*lev)
+        self.strength=5
+        self.dexterity=5
+        self.magic=30
+        self.vitality=10
+
+
+class archer(Hero):
+
+     def __init__(self,lev):
+        self.Hp=120+
+        self.Mp=60+
+        self.attack_power= 40+(10*lev)
+        self.attack_speed= 9+(0.5*lev)
+        self.strength=10
+        self.dexterity=25
+        self.magic=10
+        self.vitality=6
+
+class skill :    #필요 magic도 적어주기
+
+    def __init__(self,lev):
+    
+    def Healing(self,try):
+         if Mp<10 : 
+             print("Not enough mana")
+         else: 
+          self.Hp= (50*try)+Hp 
+          self.Mp= Mp-(10*try)
+
+    
+    def lighting(self,try):       #공격 마법에 데미지!!
+    
+    
+
+    def ManaShield(self,try):    #몬스터의 공격에 저항!! mama=0 되면 깨짐 (while 문 쓸까?)
+       
+         else: 
+          self.Hp= (50*try)+Hp 
+          self.Mp= Mp-(10*try)
+
+     def fireball(self,try):
+         if Mp<15 : 
+             print("Not enough mana")
+         else: 
+          
+
+     def iceball(self,try):
+         if Mp<10 : 
+             print("Not enough mana")
+         else: 
+    
+     def holybolt(self,try):    #숫자로 저항 표현하기?
+          
+
+     def damage_buff(self):   #전사용 스킬
+          if Mp<40 :
+              print("Not enough mana")
+          else:
+            self.Mp=Mp-40    
+
+     def  #궁사용 스킬, 연사
+
+     def  #도적용 스킬
+            
+
+
+#몬스터 불 속성 물 속성 등 추가!!
+#몬스터 데몬,언데드
+
+class monster: 
+    def __init__(self,lev,):
+        self.resist
+        self.hp=
+
+class demon(monster):
+    def __init__(self,lev):
+        self.resist
+        self.hp
+
+class undead(monster):
+    def __init__(self,lev):
+        self.resist
+        self.hp
+
+class dragon(monster):
+    def __init__(self,lev):
+        self.resist
+        self.hp
+
+class boss(monster):    #boss는 모든 계열 마법에 저항있게!
+    def __init__(self,lev):
+        self.resist
+        self.hp 
+
+#개요를 짜가지고 하는게 좋을수도 있다.
